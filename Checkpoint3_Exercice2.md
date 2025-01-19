@@ -21,6 +21,7 @@ et pour vérifier que le compte est bien été créer on tap
    * Accorder les privilèges sudo si tu as besoin d'exécuter des commandes
      
 ## Partie 2 : Configuration de SSH
+
 **Q.2.2.1 :** Pour désactiver l'accès à distance de l'utilisateur root, modifie le fichier de configuration SSH ( nano /etc/ssh/sshd_config) et ajoute ou modifie la ligne suivante **Permit login no**
 
 ![Image](https://github.com/user-attachments/assets/1c1365b8-671a-418b-983a-962fcf2aa77a)
@@ -71,10 +72,13 @@ il reste 6 Gib
 
 
 
+## Partie 4 : Sauvegardes
 
+**bareos-dir**  :Son rôle est de gérer le stockage et de planifier les tâches de sauvegarde. Il détermine quoi sauvegarder, comment le faire et à quel moment.
 
+**bareos-sd** : Il reçoit les données de sauvegarde et les écrit sur les périphériques de stockage (disques, bandes, etc.). Il gère également les volumes de stockage et assure la rotation et le recyclage des anciens volumes.
 
-
+**bareos-fd** : c'est le client et il  est installé sur les machines à sauvegarder et attend les instructions du bareos-dir . Il lit les fichiers et répertoires spécifiés et les envoie au Storage Daemon pour stockage. 
 
 
 
