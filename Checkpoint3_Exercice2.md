@@ -37,15 +37,54 @@ on'a juste a **ecrire pubkeyAuthentication yes**
 redémarrer le service SSH après avoir apporté ces modifications avec **sudo systemctl restart sshd**
 
 ## Partie 3 : Analyse du stockage
+
+
+
 **Q.2.3.1 Pour lister les systèmes de fichiers actuellement montés**
 on tap la commande **df -h**
 ![Image](https://github.com/user-attachments/assets/6bced1b4-21a5-4e03-a388-e99b8732a1fc)
 
+**Q.2.3.2 Quel type de système de stockage ils utilisent ?** 
 
-**Q.2.3.3**: Pour connaître le type de système de stockage utilisé, utilise la commande suivante : 
+d'apés la  commande **df -h** le systeme de stockage est LVM 
+
+
+
+**Q.2.3.3:  Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID**
+
+j'ai utilser les commandes : 
+
+<br>    **fdisk /dev/sdb1**
+<br>    **sudo mdadm --manage /dev/md0 --add /dev/sdb1**
 
 **LSBLK**
-![Image](https://github.com/user-attachments/assets/0ff46e21-7900-4bda-9e7d-2cccfb3bcf02)
+
+![Image](https://github.com/user-attachments/assets/9699dec6-5dfd-493f-9be1-79b546440131)
+
+**Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio**
+
+![Image](https://github.com/user-attachments/assets/579415ef-36a9-47d9-ad1d-da01abf4d6ef)
+
+**Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ? :**
+il reste 6 Gib 
+![Image](https://github.com/user-attachments/assets/21d0a34a-6fa1-467a-8ebc-75aaf01d0227)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
