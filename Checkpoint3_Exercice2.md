@@ -7,7 +7,7 @@
 **Q.2.1.1 Sur le serveur, créer un compte pour ton usage personnel**  :
 
 pour la ceation d'un compte personel on utilse la commande 
-**usseradd wilder2**
+**useradd wilder2**
 et pour vérifier que le compte est bien été créer on tap
 
 **id wilder2**
