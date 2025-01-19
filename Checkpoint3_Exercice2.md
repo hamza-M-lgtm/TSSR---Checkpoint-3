@@ -107,6 +107,9 @@ pour cela il faut vérifier avec la commande **sudo nft list ruleset**
 * Tout autre type de trafic qui n'est pas explicitement autorisé par les règles défaut
 
   **Q.2.5.4**
+
+<br>
+
   ![Image](https://github.com/user-attachments/assets/46b417f6-0f35-4198-bd9e-4e45018db5e2)
 
 
