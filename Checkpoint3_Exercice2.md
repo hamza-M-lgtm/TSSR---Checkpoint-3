@@ -81,12 +81,33 @@ il reste 6 Gib
 **bareos-fd** : c'est le client et il  est installé sur les machines à sauvegarder et attend les instructions du bareos-dir . Il lit les fichiers et répertoires spécifiés et les envoie au Storage Daemon pour stockage. 
 
 
+## Partie 5 : Filtrage et analyse réseau
+
+**Q.2.5.1 Quelles sont actuellement les règles appliquées sur Netfilter** 
+
+pour cela il faut vérifier avec la commande **sudo nft list ruleset**
+
+![Image](https://github.com/user-attachments/assets/e6001106-bad7-4ec3-a46f-5de72102a0c0)
 
 
+**Q.2.5.2 Quels types de communications sont autorisées ?**  
 
+* Les connexions établies et connexes.
 
+* Le trafic sur l'interface de bouclage (lo).
 
+* Le trafic SSH (port 22).
 
+* Les paquets ICMP et ICMPv6.
+
+**Q.2.5.3 Quels types sont interdit ?**
+
+* es paquets invalides.
+
+* Tout autre type de trafic qui n'est pas explicitement autorisé par les règles défaut
+
+  **Q.2.5.4**
+  ![Image](https://github.com/user-attachments/assets/46b417f6-0f35-4198-bd9e-4e45018db5e2)
 
 
 
