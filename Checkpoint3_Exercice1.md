@@ -80,6 +80,14 @@ Tout d'abord, nous allons créer un OU afin de déplacer **l'utilisateur Gabriel
 ![Image](https://github.com/user-attachments/assets/3afee39a-3be1-4289-b980-6899a0789d31)
 
 
+### Partie 3 : Lecteurs réseaux
+**Q.1.3.1 Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients ?**
+
+![Image](https://github.com/user-attachments/assets/432e8324-6fe0-4879-9358-883c31ea6ae7)
+
+![Image](https://github.com/user-attachments/assets/b22f848c-0b27-493a-a1de-00fc34140b0b)
+
+
 
 
 
