@@ -22,9 +22,10 @@ et pour vérifier que le compte est bien été créer on tap
      
 ## Partie 2 : Configuration de SSH
 
-**Q.2.2.1 :** Pour désactiver l'accès à distance de l'utilisateur root, modifie le fichier de configuration SSH ( nano /etc/ssh/sshd_config) et ajoute ou modifie la ligne suivante **Permit login no**
+**Q.2.2.1 :** Pour désactiver l'accès à distance de l'utilisateur root, modifie le fichier de configuration SSH ( nano /etc/ssh/sshd_config) et ajoute ou modifie
 
-![Image](https://github.com/user-attachments/assets/1c1365b8-671a-418b-983a-962fcf2aa77a)
+**permitRootLoging**
+![Image](https://github.com/user-attachments/assets/070bf98e-d17c-4100-8965-14cb543795ee)
 
 **Q.2.2.2 :**
 Pour autoriser l'accès à distance uniquement à ton compte personnel, ajoute cette ligne dans le même fichier :
@@ -42,8 +43,9 @@ redémarrer le service SSH après avoir apporté ces modifications avec **sudo s
 
 
 **Q.2.3.1 Pour lister les systèmes de fichiers actuellement montés**
-on tap la commande **df -h**
-![Image](https://github.com/user-attachments/assets/6bced1b4-21a5-4e03-a388-e99b8732a1fc)
+on tap la commande **findmnt**
+
+![Image](https://github.com/user-attachments/assets/a34bd9ea-b110-4773-9bbe-e61b1228459c)
 
 **Q.2.3.2 Quel type de système de stockage ils utilisent ?** 
 
@@ -53,18 +55,18 @@ d'apés la  commande **df -h** le systeme de stockage est LVM
 
 **Q.2.3.3:  Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID**
 
-j'ai utilser les commandes : 
+![Image](https://github.com/user-attachments/assets/db2cfdd6-cda2-4ad7-8ab0-136b94fb9805)
 
-<br>    **fdisk /dev/sdb1**
-<br>    **sudo mdadm --manage /dev/md0 --add /dev/sdb1**
 
-**LSBLK**
+pour le raid 
+![Image](https://github.com/user-attachments/assets/ba405a0b-683d-4364-8f16-94ae461603ba)
 
-![Image](https://github.com/user-attachments/assets/9699dec6-5dfd-493f-9be1-79b546440131)
 
 **Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio**
 
-![Image](https://github.com/user-attachments/assets/579415ef-36a9-47d9-ad1d-da01abf4d6ef)
+![Image](https://github.com/user-attachments/assets/d59add7f-4f57-4f32-a667-b59692723e9a)
+
+![Image](https://github.com/user-attachments/assets/ecda2319-6d40-4be3-b8b6-ca6cabe64d09)
 
 **Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ? :**
 il reste 6 Gib 
@@ -87,7 +89,7 @@ il reste 6 Gib
 
 pour cela il faut vérifier avec la commande **sudo nft list ruleset**
 
-![Image](https://github.com/user-attachments/assets/e6001106-bad7-4ec3-a46f-5de72102a0c0)
+![Image](https://github.com/user-attachments/assets/b6d277dd-200b-422f-95a8-3ad0781ff618)
 
 
 **Q.2.5.2 Quels types de communications sont autorisées ?**  
@@ -111,6 +113,13 @@ pour cela il faut vérifier avec la commande **sudo nft list ruleset**
 <br>
 
   ![Image](https://github.com/user-attachments/assets/46b417f6-0f35-4198-bd9e-4e45018db5e2)
+
+
+## Partie 6 : Analyse de logs
+**Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun**
+
+
+![Image](https://github.com/user-attachments/assets/0fbd7a9f-4445-40b8-b870-834a3f17f941)
 
 
 
