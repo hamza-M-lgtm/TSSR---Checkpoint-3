@@ -25,7 +25,7 @@ et pour vérifier que le compte est bien été créer on tap
 **Q.2.2.1 :** Pour désactiver l'accès à distance de l'utilisateur root, modifie le fichier de configuration SSH ( nano /etc/ssh/sshd_config) et ajoute ou modifie
 
 **permitRootLoging**
-![Image](https://github.com/user-attachments/assets/070bf98e-d17c-4100-8965-14cb543795ee)
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Capture d'écran_Q.2.2.1 Désactiver l'accès root à distance.png" width=500></P>
 
 **Q.2.2.2 :**
 Pour autoriser l'accès à distance uniquement à ton compte personnel, ajoute cette ligne dans le même fichier :
@@ -45,7 +45,7 @@ redémarrer le service SSH après avoir apporté ces modifications avec **sudo s
 **Q.2.3.1 Pour lister les systèmes de fichiers actuellement montés**
 on tap la commande **findmnt**
 
-![Image](https://github.com/user-attachments/assets/a34bd9ea-b110-4773-9bbe-e61b1228459c)
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.3.1 Systèmes de fichiers montés.png" width=500></P>
 
 **Q.2.3.2 Quel type de système de stockage ils utilisent ?** 
 
@@ -59,19 +59,19 @@ d'apés la  commande **df -h** le systeme de stockage est LVM
 
 
 pour le raid 
-![Image](https://github.com/user-attachments/assets/ba405a0b-683d-4364-8f16-94ae461603ba)
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.3.1 Systèmes de fichiers montés.png" width=500></P>
 
 
 **Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio**
 
-![Image](https://github.com/user-attachments/assets/d59add7f-4f57-4f32-a667-b59692723e9a)
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.3.4 Ajouter un volume LVM pour les sauvegardes_A.png" width=500></P>
 
 ![Image](https://github.com/user-attachments/assets/ecda2319-6d40-4be3-b8b6-ca6cabe64d09)
 
 **Q.2.3.5 Combien d'espace disponible reste-t-il dans le groupe de volume ? :**
 il reste 6 Gib 
-![Image](https://github.com/user-attachments/assets/21d0a34a-6fa1-467a-8ebc-75aaf01d0227)
 
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.3.5 Espace disponible dans le groupe de volume.png" width=500></P>
 
 
 ## Partie 4 : Sauvegardes
@@ -89,7 +89,7 @@ il reste 6 Gib
 
 pour cela il faut vérifier avec la commande **sudo nft list ruleset**
 
-![Image](https://github.com/user-attachments/assets/b6d277dd-200b-422f-95a8-3ad0781ff618)
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.5.1 Règles appliquées sur Netfilter.png" width=500></P>
 
 
 **Q.2.5.2 Quels types de communications sont autorisées ?**  
@@ -111,15 +111,14 @@ pour cela il faut vérifier avec la commande **sudo nft list ruleset**
   **Q.2.5.4**
 
 <br>
-
-  ![Image](https://github.com/user-attachments/assets/46b417f6-0f35-4198-bd9e-4e45018db5e2)
-
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.5.4 Ajouter des règles pour Bareos.png" width=500></P>
+  
 
 ## Partie 6 : Analyse de logs
 **Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun**
 
 
-![Image](https://github.com/user-attachments/assets/0fbd7a9f-4445-40b8-b870-834a3f17f941)
+<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.6.1 Lister les 10 derniers échecs de connexion.png" width=500></P>
 
 
 
