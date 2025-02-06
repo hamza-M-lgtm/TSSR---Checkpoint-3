@@ -6,20 +6,18 @@
 
 pour la creation du compte **Lionel Lemarchand** 
 Clique droit sur DirectionDesRessourcesHumaine > New> User> en rentre les information puis on valide a la fin et en clique sur terminer . voir l'image pour les attributs 
-![Image](https://github.com/user-attachments/assets/0dfb4e5d-a963-46d6-8342-b130d8c75d57)
+<P ALIGN="center"><IMG src="ressources/SC.Lione.Lemarchand-Q.1.1.1  .png" width=500></P>
 
 
 **Q.1.1.2 Créer une OU DeactivatedUsers et déplace le compte désactivé de Kelly Rhameur dedans**
 
 clique droit sur notre domaine TSSR.lan  > NEW > Organizational Unit et en rentre le nom de  **DeactivatedUsers**
 
-![Image](https://github.com/user-attachments/assets/74d241e5-e181-42ab-9d78-39407473003b)
-
-![Image](https://github.com/user-attachments/assets/175df7b0-50d5-467e-9b0f-f5102250caef)
 
 **Q.1.1.3 Modifier le groupe de l'OU dans laquelle était Kelly Rhameur en conséquence.**
 
-![Image](https://github.com/user-attachments/assets/da13e6ca-7748-4eed-8027-7353caf1c630)
+
+<P ALIGN="center"><IMG src="ressources/Capture d'écran_Q.1.1.3.png" width=500></P>
 
 ### Partie 2 : Restriction utilisateurs
 Q.1.2.1 Faire en sorte que l'utilisateur Gabriel Ghul ne puisse se connecter que du lundi au vendredi, de 7h à 17h.
@@ -45,7 +43,7 @@ Tout d'abord, nous allons créer un OU afin de déplacer **l'utilisateur Gabriel
 * Appliquer la stratégie : Clique sur "Suivant" puis sur "Terminer" pour appliquer la stratégie de groupe.
 
 **Q.1.2.2 De même, bloquer sa connexion au seul ordinateur CLIENT01**
-![Image](https://github.com/user-attachments/assets/2a4fa3ce-dab3-4996-8a2a-224af821890e)
+<P ALIGN="center"><IMG src="ressources/Partie_2_Restriction utilisateurs_Q.1.2.2.png" width=500></P>
 
 **Q.1.2.3 Mettre en place une stratégie de mot de passe pour durcir les comptes des utilisateurs de l'OU LabUsers** 
 * Ouvrez la console Group Policy Management (GPMC).
@@ -53,7 +51,7 @@ Tout d'abord, nous allons créer un OU afin de déplacer **l'utilisateur Gabriel
 * Clic droit sur l'OU LabUsers et sélectionnez "Create a GPO in this domain, and Link it here...".
 
 *  Nommez la nouvelle GPO (par exemple, "LabUsers Password Policy") et cliquez sur "OK".
-![Image](https://github.com/user-attachments/assets/76f487d6-32a6-48d6-bf5b-95b3365a31aa)
+<P ALIGN="center"><IMG src="ressources/Capture d'écran_Q_1.2.3.png" width=500></P>
 
 
 * Clic droit sur la nouvelle GPO créée et sélectionnez "Edit".
@@ -77,15 +75,16 @@ Tout d'abord, nous allons créer un OU afin de déplacer **l'utilisateur Gabriel
 
 * Fermez l'éditeur de Group Policy Management une fois les paramètres configurés
 
-![Image](https://github.com/user-attachments/assets/3afee39a-3be1-4289-b980-6899a0789d31)
+<P ALIGN="center"><IMG src="ressources/Capture d'écran_Q.1.2.3.B.png" width=500></P>
 
 
 ### Partie 3 : Lecteurs réseaux
 **Q.1.3.1 Créer une GPO Drive-Mount qui monte les lecteurs E: et F: sur les clients ?**
 
-![Image](https://github.com/user-attachments/assets/432e8324-6fe0-4879-9358-883c31ea6ae7)
+<P ALIGN="center"><IMG src="ressources/Nouveau dossier/Capture d'écran Q.1.3.1 Créer une GPO Drive-Mount .png" width=500></P>
 
-![Image](https://github.com/user-attachments/assets/b22f848c-0b27-493a-a1de-00fc34140b0b)
+<P ALIGN="center"><IMG src="ressources/SC_Q.1.3.1.png" width=500></P>
+
 
 
 
