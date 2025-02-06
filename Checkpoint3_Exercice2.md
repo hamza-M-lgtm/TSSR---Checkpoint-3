@@ -55,11 +55,12 @@ d'apés la  commande **df -h** le systeme de stockage est LVM
 
 **Q.2.3.3:  Ajouter un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID**
 
-![Image](https://github.com/user-attachments/assets/db2cfdd6-cda2-4ad7-8ab0-136b94fb9805)
+<P ALIGN="center"><IMG src="ressources/Capture d'écran.Q.2.3.3 .png" width=500></P>
+
 
 
 pour le raid 
-<P ALIGN="center"><IMG src="ressources/Exercice 2 - Manipulations pratiques sur VM Linux/Q.2.3.1 Systèmes de fichiers montés.png" width=500></P>
+<P ALIGN="center"><IMG src="ressources/Nouveau dossier/Capture d'écran Raid 8G.png" width=500></P>
 
 
 **Q.2.3.4 Ajouter un nouveau volume logique LVM de 2 Gio**
